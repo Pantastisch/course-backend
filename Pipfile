@@ -5,8 +5,23 @@ name = "pypi"
 
 [packages]
 fastapi = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
+pydantic = {extras = ["email"], version = "*"}
+pymysql = "*"
+python-dotenv = "*"
+python-jose = {extras = ["cryptography"], version = "*"}
+python-multipart = "*"
+sqlalchemy = "*"
+uvicorn = {extras = ["standard"], version = "*"}
 
 [dev-packages]
+alembic = "*"
+black = "*"
+isort = "*"
+mypy = "*"
+pytest = "*"
+types-passlib = "*"
+types-python-jose = "*"
 
 [requires]
 python_version = "3.11"

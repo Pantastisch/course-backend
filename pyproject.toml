@@ -1,0 +1,20 @@
+[tool.black]
+line-length = 88
+preview = false
+
+[tool.isort]
+line_length = 88
+profile = 'black'
+
+[tool.mypy]
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pylint.MASTER]
+disable = '''
+    line-too-long,
+    missing-class-docstring,
+    missing-function-docstring,
+    missing-module-docstring,
+    '''
+ignore-paths = '^alembic/.*$'
